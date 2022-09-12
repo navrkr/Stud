@@ -1,0 +1,448 @@
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: #fef0e3;
+    font-family: "Lato",sans-serif;
+    position: relative;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(1, #f8c0c3), color-stop(0.75, #fcd7cf), color-stop(0.55, #fef0e3), color-stop(0, #fef0e3));
+    background-image: linear-gradient(to top, #fef0e3 0% #fef0e3 55%, #fcd7cf 75%, #f8c0c3 100%);
+}
+
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.noSelect {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#block {
+    height: 150%;
+    width: 150%;
+    background-color: #090a17;
+    margin-top: 1000px;
+    filter: contrast(89%) brightness(237%) blur(0.125rem);
+}
+
+#block2 {
+    height: 150%;
+    width: 150%;
+    background-color: #090a17;
+    margin-top: 900px;
+    filter: contrast(88%) brightness(245%) blur(0.025rem);
+}
+
+.scene {
+    margin: 0;
+    padding: 0;
+    bottom: 12.5%;
+    left: -12.5%;
+    padding-top: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.scene button {
+    left: 10%;
+    top: 260px;
+    width: 80%;
+    position: absolute;
+}
+
+.fill {
+    bottom: 5%;
+    left: 5%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.expand-width {
+    width: 100%;
+}
+
+.border {
+    border: 2px dashed #00ffaa;
+}
+
+.aspect {
+    opacity: 0.2;
+}
+
+.layerElement {
+    size: 150%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-clip: padding-box;
+}
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+#clouds {
+    filter: blur(0.25rem);
+    -webkit-animation: animateCloud 295s linear infinite;
+    -moz-animation: animateCloud 295s linear infinite;
+    animation: animateCloud 295s linear infinite;
+}
+
+#mountains {
+    width: 2880px ;
+    height: 1080px;
+    filter: blur(0.125rem);
+}
+
+#mountainMiddle {
+    width: 2880px ;
+    height: 1080px;
+    filter: blur(0.05rem);
+}
+
+#hills1 {
+    width: 2880px ;
+    height: 1080px;
+    filter: blur(0.025rem);
+}
+
+#hills2 {
+    width: 2880px ;
+    height: 1080px;
+    filter: blur(0.05rem);
+}
+
+#hills3 {
+    width: 2880px ;
+    height: 1080px;
+    filter: blur(0.05rem);
+}
+
+#heroHill {
+    width: 2880px ;
+    height: 1080px;
+}
+
+#smallBird {
+    filter: contrast(25%) brightness(85%) blur(0.125rem);
+    transform: translateY(60vw) scale(0.55);
+}
+.login-div{
+    width: 300px;
+    height: 450px;
+    position: center;
+    top: 12.5%;
+    left: 37.5%;
+    padding: 40px 35px 35px 35px;
+    border-radius: 40px;
+    background-color: #ffffff00;
+    box-shadow: 13px 13px 20px #9f97c0,
+    -13px -13px 20px #facdca;
+}
+.logo{
+    background-size: 90px 90px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #fff;
+}
+.title{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+.sub-title{
+    color: #555;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 7px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+}
+.fields{
+    width: 90%;
+    padding: 45px 5px 5px 5px;
+}
+.fields input{
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+.username,.password{
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: inset 4px 4px 10px #facdca,inset -4px -4px 10px #9f97c0;
+}
+
+.signin-button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height:50px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    background-color: #d33f8d;
+    transition: all 0.5s;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+}
+
+.signin-button:hover{
+    background-color: #fa7575;
+}
+.signin-button:active{
+    background-color: #1bf531;
+}
+
+.login-register-text {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #16124d;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  }
+
+.container{
+  width: 330px;
+  height:fit-content;
+  background: #ffffff00;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+  border-radius: 40px;
+  background-color: #ffffff1c;
+  box-shadow: 9px 9px 15px #9f97c0,
+    -9px -9px 15px #facdca;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 28px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #d43f8d;
+  background: #d43f8d;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: #d43f8d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 78%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
